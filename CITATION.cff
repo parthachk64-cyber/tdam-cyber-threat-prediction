@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this companion, please cite the paper it accompanies."
+title: "TDAM research companion: point-in-time cyber threat forecasting"
+authors:
+  - family-names: Chakraborty
+    given-names: Partha
+repository-code: "https://github.com/parthachk64-cyber/tdam-cyber-threat-prediction"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Cyber Threat Prediction Using Temporal Data Analysis Model"
+  authors:
+    - family-names: Chakraborty
+      given-names: Partha
+  collection-title: "2026 6th International Conference on Intelligent Technologies (CONIT)"
+  location: { name: "Belgavi, India" }
+  year: 2026
+  doi: "10.1109/CONIT69683.2026.11620680"

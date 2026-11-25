@@ -1,0 +1,38 @@
+protocol:
+  bin_seconds: 60
+  lookback_bins: 30
+  horizon_minutes: 5
+  decision_stride: 1
+  recovery_minutes: 10
+  cooldown_minutes: 10
+splits:
+  train: 0.5
+  val: 0.1
+  calib: 0.1
+  test: 0.3
+model:
+  hidden: 64
+  layers: 1
+  epochs: 12
+  patience: 3
+  lr: 0.001
+  batch: 256
+  train_neg_stride: 3
+  tree_iter: 150
+  tree_lr: 0.08
+  tree_depth: 4
+  oof_folds: 3
+  oof_epochs: 5
+  threads: 4
+alerting:
+  budget_per_host_hour: 0.03
+adaptive:
+  update_every_minutes: 720
+  finetune_epochs: 2
+  replay_fraction: 0.5
+seed: 7
+provenance:
+  protocol.*: companion_default (not specified in the supplied abstract)
+  model.*: companion_default (reference implementation, not the paper's architecture)
+  alerting.*: companion_default
+  adaptive.*: companion_default

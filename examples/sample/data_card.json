@@ -1,0 +1,35 @@
+{
+  "caveat": "Signals are constructed by this generator; results on it are demonstrations, not evidence about real networks.",
+  "files": {
+    "coverage.json": {
+      "sha256": "7b46acafbbdf101e73e451b6df4e18d7aaa5c0e859af492abd3b8d210448b73b"
+    },
+    "events.jsonl": {
+      "sha256": "47abe9e38698ee875e7968d673aa45f66fbeab1b3e1ce5be5893fd62f8277eb4"
+    },
+    "incidents.jsonl": {
+      "sha256": "df40d6100d7b6772e7e7855d14ce191763675cd132bcea72102055a30846bf6e"
+    }
+  },
+  "kind": "synthetic (original generator, seeded)",
+  "label_source": "incidents.jsonl, generated alongside events and never written into events.jsonl",
+  "licence": "MIT (original synthetic data)",
+  "n_entities": 3,
+  "n_events": 1171,
+  "n_incidents": 7,
+  "name": "tdam-synthetic-fixture",
+  "spec": {
+    "benign_bursts_per_host_day": 3.0,
+    "benign_fail_per_host_day": 1.0,
+    "days": 0.5,
+    "duplicate_rate": 0.015,
+    "incidents_per_host_day": 4,
+    "lookalikes_per_host_day": 0.6,
+    "n_hosts": 3,
+    "outage_hosts": 0,
+    "precursor_probability": 0.75,
+    "seed": 11,
+    "start": "2026-01-05T00:00:00Z"
+  },
+  "unit_of_analysis": "(entity, decision minute)"
+}

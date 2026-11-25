@@ -1,0 +1,36 @@
+# Claims taken ONLY from the supplied abstract (IEEE Xplore record 11620680, DOI 10.1109/CONIT69683.2026.11620680).
+# The full text could not be read: ieeexplore.ieee.org answered the automated request with HTTP 202 (bot challenge)
+# and no PDF was supplied. No numeric result from the paper is therefore known or reproduced here.
+paper:
+  title: Cyber Threat Prediction Using Temporal Data Analysis Model
+  author: Partha Chakraborty
+  venue: 2026 6th International Conference on Intelligent Technologies (CONIT), Belgavi, India, 19-21 June 2026
+  doi: 10.1109/CONIT69683.2026.11620680
+  ieee_record: https://ieeexplore.ieee.org/document/11620680
+  full_text_read: false
+claims:
+  - claim: Model outperforms traditional ML on accuracy
+    location: Abstract
+    value: qualitative only, no number given
+    status: not reproducible (dataset, baselines and numbers unavailable)
+    measured_here: "Window accuracy on the synthetic fixture is dominated by the always-negative baseline (see results section 4); accuracy is reported only with that context. No comparison to the paper's baselines is possible."
+  - claim: Model outperforms traditional ML on detection latency
+    location: Abstract
+    value: qualitative only, no number given
+    status: not reproducible
+    measured_here: "Processing latency (ms) and detection delay (minutes after onset) are measured separately in results sections 1 and 5. The paper's definition of latency is unknown."
+  - claim: Model outperforms traditional ML on threat anticipation
+    location: Abstract
+    value: qualitative only, no number given
+    status: not reproducible
+    measured_here: "Advance warnings (early / incidents) per model at one shared alert budget, with unmatched alerts, in results section 1 (synthetic data only)."
+  - claim: LSTM networks and hybrid ensemble learning reduce false alarms
+    location: Abstract
+    value: qualitative only
+    status: not reproducible
+    measured_here: "LSTM, tree, logistic, prevalence and the convex-blend ensemble are compared at identical decision times and the same budget; see results sections 1-3 for which won."
+  - claim: Adaptive learning improves scalability and robustness
+    location: Abstract
+    value: qualitative only
+    status: not reproducible
+    measured_here: "Frozen vs walk-forward comparison in results section 3. Scalability is not measured."

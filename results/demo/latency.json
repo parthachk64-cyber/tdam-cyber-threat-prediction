@@ -1,0 +1,61 @@
+{
+  "hardware": {
+    "clock": "time.perf_counter_ns (monotonic)",
+    "device": "cpu",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "python": "3.10.11",
+    "torch": "2.13.0+cpu",
+    "torch_threads": 4
+  },
+  "latency": {
+    "end_to_end_ms": {
+      "batch_size": 16,
+      "n_measured": 220,
+      "n_warmup_discarded": 20,
+      "p50_ms": 52.1555,
+      "p95_ms": 412.63768,
+      "p99_ms": 624.1170160000004
+    },
+    "feature_ms": {
+      "batch_size": 16,
+      "n_measured": 220,
+      "n_warmup_discarded": 20,
+      "p50_ms": 1.68855,
+      "p95_ms": 4.412349999999997,
+      "p99_ms": 7.390575000000002
+    },
+    "ingest_ms": {
+      "batch_size": 16,
+      "n_measured": 220,
+      "n_warmup_discarded": 20,
+      "p50_ms": 0.18815,
+      "p95_ms": 0.6154049999999982,
+      "p99_ms": 2.210186
+    },
+    "score_ms": {
+      "batch_size": 16,
+      "n_measured": 220,
+      "n_warmup_discarded": 20,
+      "p50_ms": 49.794399999999996,
+      "p95_ms": 408.33782999999994,
+      "p99_ms": 621.3863070000003
+    }
+  },
+  "note": "processing milliseconds only; unrelated to detection delay or advance-warning minutes",
+  "parity_compared_rows": 3840,
+  "parity_max_abs_diff": {
+    "ensemble": 0.0,
+    "logistic": 0.0,
+    "lstm": 0.0,
+    "prevalence": 0.0,
+    "tree": 0.0
+  },
+  "replay_stats": {
+    "duplicates": 43,
+    "ingested": 2933,
+    "stale_dropped": 85807,
+    "unknown_entity": 0
+  },
+  "ticks": 240
+}

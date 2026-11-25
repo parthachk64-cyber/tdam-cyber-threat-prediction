@@ -1,0 +1,31 @@
+{
+  "entities": {
+    "H001": [
+      [
+        "2026-01-05T00:00:00Z",
+        "2026-01-05T12:00:00Z"
+      ]
+    ],
+    "H002": [
+      [
+        "2026-01-05T00:00:00Z",
+        "2026-01-05T12:00:00Z"
+      ]
+    ],
+    "H003": [
+      [
+        "2026-01-05T00:00:00Z",
+        "2026-01-05T12:00:00Z"
+      ]
+    ]
+  },
+  "modalities_absent": [
+    "dns",
+    "flow",
+    "process"
+  ],
+  "modalities_present": [
+    "auth"
+  ],
+  "note": "Intervals are monitored time; outside them counts are UNKNOWN, not zero."
+}

@@ -1,0 +1,26 @@
+{
+  "early": {
+    "incident_id": "H005-I07",
+    "entity": "H005",
+    "onset": "2026-01-11T18:28:00Z",
+    "lead_min": 5.0,
+    "delay_min": null,
+    "file": "traces/trace_early_H005-I07.csv"
+  },
+  "late": {
+    "incident_id": "H003-I06",
+    "entity": "H003",
+    "onset": "2026-01-10T16:40:00Z",
+    "lead_min": 0.0,
+    "delay_min": 1.0,
+    "file": "traces/trace_late_H003-I06.csv"
+  },
+  "missed": {
+    "incident_id": "H009-I03",
+    "entity": "H009",
+    "onset": "2026-01-10T19:42:00Z",
+    "lead_min": 0.0,
+    "delay_min": null,
+    "file": "traces/trace_missed_H009-I03.csv"
+  }
+}

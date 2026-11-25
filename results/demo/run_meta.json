@@ -1,0 +1,296 @@
+{
+  "blend_weight": 0.8,
+  "dataset": {
+    "ingest_stats": {
+      "duplicates": 1842,
+      "input": 120962,
+      "outside_timeline": 0,
+      "unknown_entity": 0
+    },
+    "name": "demo",
+    "source": "synthetic",
+    "source_file_sha256": {
+      "coverage.json": "02f583778c5f87ed246687399df904451fb77284a177084ae84786c767c4dd0a",
+      "events.jsonl": "36a9b5c83c2948370e3063f5adadfd06d72fbab8d8431b3208a23d22c90f1d73",
+      "incidents.jsonl": "16aa71be85da7568e85dd2756ed89fee54ade795c10169dfeb10eb8090ca3462"
+    }
+  },
+  "feature_schema": {
+    "absent_modalities": [
+      "dns",
+      "flow",
+      "process"
+    ],
+    "note": "counts of zero with observed=1 are true zeros; observed=0 means unknown coverage",
+    "sequence": {
+      "channels": [
+        "events",
+        "fail",
+        "success",
+        "uniq_dst",
+        "gap_min",
+        "observed"
+      ],
+      "shape": [
+        "batch",
+        30,
+        6
+      ]
+    },
+    "tabular": {
+      "names": [
+        "total_events",
+        "total_fail",
+        "fail_rate",
+        "total_uniq_dst",
+        "max_bin_events",
+        "std_bin_events",
+        "events_last5",
+        "events_prior",
+        "events_ratio",
+        "fail_rate_last10",
+        "fail_rate_prior20",
+        "fail_rate_delta",
+        "uniq_dst_last10",
+        "uniq_dst_slope",
+        "gap_last_min",
+        "observed_frac"
+      ]
+    }
+  },
+  "git_revision": "no-commit-yet",
+  "incidents_per_partition": {
+    "calib": 7,
+    "purged": 1,
+    "test": 25,
+    "train": 50,
+    "val": 9
+  },
+  "model_version": "v0-frozen",
+  "oof": {
+    "blend_detail": {
+      "grid": {
+        "0.0": 0.07155832302157755,
+        "0.1": 0.08236894570762603,
+        "0.2": 0.09291712634608218,
+        "0.3": 0.09870854873672465,
+        "0.4": 0.10170331378632566,
+        "0.5": 0.10442265316146083,
+        "0.6": 0.10658283050522266,
+        "0.7": 0.10977803911245161,
+        "0.8": 0.11144910078677206,
+        "0.9": 0.11087801538408883,
+        "1.0": 0.10024638425432568
+      },
+      "reason": "max OOF average precision"
+    },
+    "folds": [
+      {
+        "fit_bins": [
+          0,
+          1152
+        ],
+        "fold": 1,
+        "n_pred": 22278,
+        "positives": 55,
+        "predict_bins": [
+          1440,
+          2880
+        ]
+      },
+      {
+        "fit_bins": [
+          0,
+          2304
+        ],
+        "fold": 2,
+        "n_pred": 22279,
+        "positives": 58,
+        "predict_bins": [
+          2880,
+          4320
+        ]
+      },
+      {
+        "fit_bins": [
+          0,
+          3456
+        ],
+        "fold": 3,
+        "n_pred": 22314,
+        "positives": 40,
+        "predict_bins": [
+          4320,
+          5760
+        ]
+      }
+    ]
+  },
+  "provenance": {
+    "adaptive.*": "companion_default",
+    "alerting.*": "companion_default",
+    "model.*": "companion_default (reference implementation, not the paper's architecture)",
+    "protocol.*": "companion_default (not specified in the supplied abstract)"
+  },
+  "runtime": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python": "3.10.11",
+    "sklearn": "1.7.2",
+    "tdam": "0.1.0",
+    "torch": "2.13.0+cpu"
+  },
+  "seed": 7,
+  "split_ids": {
+    "calib": {
+      "end": "2026-01-10T14:25:00Z",
+      "first_decision": "2026-01-09T19:42:00Z",
+      "incident_ids": [
+        "H001-I06",
+        "H004-I03",
+        "H005-I05",
+        "H006-I04",
+        "H007-I04",
+        "H011-I04",
+        "H011-I05"
+      ],
+      "last_decision": "2026-01-10T14:19:00Z",
+      "start": "2026-01-09T19:13:00Z"
+    },
+    "test": {
+      "end": "2026-01-13T00:01:00Z",
+      "first_decision": "2026-01-10T14:54:00Z",
+      "incident_ids": [
+        "H001-I07",
+        "H001-I08",
+        "H003-I06",
+        "H003-I07",
+        "H003-I08",
+        "H004-I04",
+        "H005-I06",
+        "H005-I07",
+        "H006-I05",
+        "H008-I04",
+        "H008-I05",
+        "H009-I02",
+        "H009-I03",
+        "H009-I04",
+        "H010-I08",
+        "H010-I09",
+        "H010-I10",
+        "H011-I06",
+        "H012-I02",
+        "H013-I06",
+        "H014-I09",
+        "H015-I06",
+        "H016-I02",
+        "H016-I03",
+        "H016-I04"
+      ],
+      "last_decision": "2026-01-12T23:55:00Z",
+      "start": "2026-01-10T14:25:00Z"
+    },
+    "train": {
+      "end": "2026-01-09T00:00:00Z",
+      "first_decision": "2026-01-05T00:29:00Z",
+      "incident_ids": [
+        "H001-I01",
+        "H001-I02",
+        "H001-I03",
+        "H001-I04",
+        "H002-I01",
+        "H002-I02",
+        "H002-I03",
+        "H002-I04",
+        "H003-I01",
+        "H003-I02",
+        "H003-I03",
+        "H003-I04",
+        "H003-I05",
+        "H004-I01",
+        "H004-I02",
+        "H005-I01",
+        "H005-I02",
+        "H006-I01",
+        "H006-I02",
+        "H007-I01",
+        "H007-I02",
+        "H007-I03",
+        "H008-I01",
+        "H008-I02",
+        "H010-I01",
+        "H010-I02",
+        "H010-I03",
+        "H010-I04",
+        "H010-I05",
+        "H010-I06",
+        "H010-I07",
+        "H011-I01",
+        "H011-I02",
+        "H011-I03",
+        "H012-I01",
+        "H013-I01",
+        "H013-I02",
+        "H013-I03",
+        "H013-I04",
+        "H014-I01",
+        "H014-I02",
+        "H014-I03",
+        "H014-I04",
+        "H014-I05",
+        "H014-I06",
+        "H015-I01",
+        "H015-I02",
+        "H015-I03",
+        "H015-I04",
+        "H016-I01"
+      ],
+      "last_decision": "2026-01-08T23:54:00Z",
+      "start": "2026-01-05T00:00:00Z"
+    },
+    "val": {
+      "end": "2026-01-09T19:13:00Z",
+      "first_decision": "2026-01-09T00:29:00Z",
+      "incident_ids": [
+        "H001-I05",
+        "H005-I03",
+        "H006-I03",
+        "H008-I03",
+        "H009-I01",
+        "H013-I05",
+        "H014-I07",
+        "H014-I08",
+        "H015-I05"
+      ],
+      "last_decision": "2026-01-09T19:07:00Z",
+      "start": "2026-01-09T00:00:00Z"
+    }
+  },
+  "thresholds": {
+    "ensemble": {
+      "budget": 0.9548781969887131,
+      "f1": 0.9546735616188791
+    },
+    "logistic": {
+      "budget": 0.9769596531043684,
+      "f1": 0.9767898839842121
+    },
+    "lstm": {
+      "budget": 0.9711667695045468,
+      "f1": 0.980071485042572
+    },
+    "prevalence": {
+      "budget": 0.0082315366632643,
+      "f1": 0.008231536663264299
+    },
+    "tree": {
+      "budget": 0.9701777994245546,
+      "f1": 0.952404430412734
+    }
+  },
+  "train": {
+    "positive_windows": 250,
+    "windows": 30371
+  }
+}

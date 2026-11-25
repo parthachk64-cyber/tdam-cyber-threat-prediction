@@ -1,0 +1,90 @@
+{
+  "blend_weight": 0.8,
+  "class_order": {
+    "0": "no annotated onset in (t, t+H]",
+    "1": "annotated onset in (t, t+H]"
+  },
+  "extra": {
+    "protocol": {
+      "bin_seconds": 60,
+      "cooldown_minutes": 10,
+      "decision_stride": 1,
+      "horizon_minutes": 5,
+      "lookback_bins": 30,
+      "recovery_minutes": 10
+    },
+    "seed": 7
+  },
+  "feature_schema": {
+    "absent_modalities": [
+      "dns",
+      "flow",
+      "process"
+    ],
+    "note": "counts of zero with observed=1 are true zeros; observed=0 means unknown coverage",
+    "sequence": {
+      "channels": [
+        "events",
+        "fail",
+        "success",
+        "uniq_dst",
+        "gap_min",
+        "observed"
+      ],
+      "shape": [
+        "batch",
+        30,
+        6
+      ]
+    },
+    "tabular": {
+      "names": [
+        "total_events",
+        "total_fail",
+        "fail_rate",
+        "total_uniq_dst",
+        "max_bin_events",
+        "std_bin_events",
+        "events_last5",
+        "events_prior",
+        "events_ratio",
+        "fail_rate_last10",
+        "fail_rate_prior20",
+        "fail_rate_delta",
+        "uniq_dst_last10",
+        "uniq_dst_slope",
+        "gap_last_min",
+        "observed_frac"
+      ]
+    }
+  },
+  "hidden": 64,
+  "layers": 1,
+  "lookback_bins": 30,
+  "model_version": "v0-frozen",
+  "n_features": 6,
+  "package_version": "0.1.0",
+  "score_semantics": "score in [0, 1], monotone in risk; trained with class weights, so it is a ranking score, not a calibrated probability",
+  "thresholds": {
+    "ensemble": {
+      "budget": 0.9548781969887131,
+      "f1": 0.9546735616188791
+    },
+    "logistic": {
+      "budget": 0.9769596531043684,
+      "f1": 0.9767898839842121
+    },
+    "lstm": {
+      "budget": 0.9711667695045468,
+      "f1": 0.980071485042572
+    },
+    "prevalence": {
+      "budget": 0.0082315366632643,
+      "f1": 0.008231536663264299
+    },
+    "tree": {
+      "budget": 0.9701777994245546,
+      "f1": 0.952404430412734
+    }
+  }
+}

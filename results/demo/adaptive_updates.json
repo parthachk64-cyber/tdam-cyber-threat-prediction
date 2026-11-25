@@ -1,0 +1,49 @@
+[
+  {
+    "effective_from": 8094,
+    "matured_used": 0,
+    "max_known_at_used": null,
+    "n_train": 36308,
+    "version": 0
+  },
+  {
+    "effective_from": 8814,
+    "matured_used": 3548,
+    "max_known_at_used": 1768097100,
+    "n_train": 39856,
+    "refit": true,
+    "update_time": 1768100040,
+    "update_time_utc": "2026-01-11T02:54:00Z",
+    "version": 1
+  },
+  {
+    "effective_from": 9534,
+    "matured_used": 7627,
+    "max_known_at_used": 1768143180,
+    "n_train": 43935,
+    "refit": true,
+    "update_time": 1768143240,
+    "update_time_utc": "2026-01-11T14:54:00Z",
+    "version": 2
+  },
+  {
+    "effective_from": 10254,
+    "matured_used": 11134,
+    "max_known_at_used": 1768183500,
+    "n_train": 47442,
+    "refit": true,
+    "update_time": 1768186440,
+    "update_time_utc": "2026-01-12T02:54:00Z",
+    "version": 3
+  },
+  {
+    "effective_from": 10974,
+    "matured_used": 14993,
+    "max_known_at_used": 1768227240,
+    "n_train": 51301,
+    "refit": true,
+    "update_time": 1768229640,
+    "update_time_utc": "2026-01-12T14:54:00Z",
+    "version": 4
+  }
+]
