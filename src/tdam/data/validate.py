@@ -8,9 +8,8 @@ import numpy as np
 
 from tdam.config import Config
 from tdam.data.dataset import build_dataset
-from tdam.data.io import read_json, read_jsonl, sha256_file
+from tdam.data.io import event_from_record, incident_from_record, read_json, read_jsonl, sha256_file
 from tdam.data.schema import FORBIDDEN_EVENT_FIELDS
-from tdam.data.io import event_from_record, incident_from_record
 from tdam.temporal.labels import CENSORED
 from tdam.temporal.splits import make_partitions, partition_mask
 from tdam.temporal.windows import build_windowset
